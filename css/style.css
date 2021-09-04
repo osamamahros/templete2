@@ -1,0 +1,253 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family:'Open Sans',arial;
+}
+/*nav*/
+nav
+ {  
+    z-index: 11111;
+    position: fixed;
+    width: 100%;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255,255,255,.15) ;
+}
+ .container
+{
+    width: 90%;
+    margin: auto;
+}
+nav .container .row
+{
+    display: flex;
+}
+nav .container .row .row-img{
+flex: 60%;
+max-width: 60%;
+
+}
+nav .container .row .row-img img{
+    width: 21%;
+}
+nav .container .row .row-list{
+    flex: 40%;
+    max-width: 40%;
+  
+    }
+    nav .container .row .row-list ul{
+        list-style-type: none;
+        display: flex;
+    }
+    nav .container .row .row-list ul a{
+        text-decoration: none;
+        padding-right: 30px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 300;
+    }
+   
+    /*nav*/
+ /*Header*/
+ header{
+     background-image: url("../img/business.jpg");
+     width: 100%;
+     height: 803px;
+     background-position: center;
+     background-size: cover;
+     position: relative;
+ }
+ header .overlay
+ {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+    
+ }
+
+
+ .overlay-info
+ {
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+ 
+ .overlay-info h1{
+    font-size: 81px;
+    font-weight: 700;
+     color: #fff;
+     margin-bottom: 26px;
+ }
+ .overlay-info p{
+    font-size: 20px;
+    font-size: 23px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 41px;
+ }
+ .overlay-info .btn-one
+ {
+     border: none;
+    border: 2px solid transparen;
+    padding: 17px 23px;
+    background-color:#4274b7 ;
+    margin-right: 17px;
+    color: #fff;
+    font-size: 15px;    
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 6px;
+ }
+.overlay-info .btn-one:hover{
+    background-color:#fff;
+    color: black;
+}
+.overlay-info .btn-two
+{
+    border: none;
+    border: 2px solid transparen;
+    padding: 17px 23px;
+    font-size: 15px;    
+    font-weight: 600;
+    text-transform:uppercase;
+    border-radius: 6px;
+    
+}
+.overlay-info .btn-two:hover{
+    opacity: 0.8;
+}
+.animate
+{
+
+    position: absolute;
+    bottom: 40px;
+    left: 48%;
+
+}
+.animate .animate-p
+{
+    border: 2px solid rgba(255,255,255,.7);
+    width: 33px;
+    height: 49px;
+    display: inline-block;
+    border-radius: 40%;
+    text-align: center;
+    overflow: hidden;
+}
+.animate .animate-p span{
+    width:6px;
+    height: 6px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    animation-name: scroll;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+   
+   
+   
+}
+@keyframes scroll
+{
+    0%{transform: translatey(-6px);}
+   
+    
+    100%{transform: translatey(10PX);opacity: 0;}
+}
+/*Header*/
+/*skils*/
+.parent{
+  
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+   
+   
+}
+.child
+{
+    
+    width: 30%;
+    height: 10%;
+    display: flex;
+}
+
+ .skils-img
+{
+  
+    width: 30%;
+    height: 100%;
+}
+.skils-img i{
+  padding-left: 40px;
+  padding-top: 20px;
+  color: #686868;
+}
+ .skils-info
+{
+  
+    width: 70%;
+    height: 100%;
+    padding: 20px 0;
+}
+ .skils-info h3{
+    font-size: 17px;
+}
+.skils-info p{
+    font-weight: 400;
+    color: #686868;
+    padding: 20px 0;
+}
+/*skils*/
+
+/*Discription*/
+.who 
+{
+    background-color: #f8f8f9;
+    padding: 50px 0;
+}
+.dsc
+{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ .dsc-img
+{
+   flex: 50%;
+   max-width: 50%;
+
+}
+.dsc-img img
+{
+    height: 502px;
+    
+}
+ .dsc-info
+{
+    flex: 50%;
+    max-width: 50%;
+  
+  
+   
+}
+/*Discription*/
+
+    
